@@ -1,7 +1,7 @@
 {
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
-  "workspaceFolder": "/workspaces",
+  "workspaceFolder": "/",
   "customizations": {
     "vscode": {
       "extensions": [],
@@ -13,6 +13,9 @@
     }
   },
   "postCreateCommand": "",
-  "features": { "ghcr.io/devcontainers/features/git:1": {} },
-  "remoteUser": "vscode"
+  "features": { "ghcr.io/devcontainers/features/git:1": {},
+                "ghcr.io/devcontainers/features/docker-outside-of-docker:2": {},
+                "ghcr.io/devcontainers/features/docker-in-docker:3": {}
+                },
+  "remoteUser": "vscode-web"
 }
